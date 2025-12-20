@@ -92,10 +92,23 @@
 
 @media (max-width: 675px) {
   .playInfo { display: none; }
-  .console-block { width: 90vw; }
+  .console-block { width: 80vw; left: 10vw; }
   .help { font-size: 0.6rem; }
   .reload-all-skins { font-size: 0.45rem; }
   .player-stats3 { width: 100px; }
+  .math-game-difficulty-window { justify-content: space-around; }
+  body { justify-content: space-around; }
+  .content-block { height: 50vh; }
+
+  .show-hint, .generate-easy-asc, .skip-math-asc, .player-stats2, .open-player-goals2, .open-math-backPack2 { width: 15vw; }
+  .show-hint { bottom: 40vh; }
+  .generate-easy-asc { bottom: 35vh; }
+  .skip-math-asc { bottom: 30vh; }
+
+  .closeInitialGame { width: 40vw; left: 30vw; }
+  .okay { width: 40vw; left: 30vw; }
+
+  .open-text-area { font-size: 0.5rem; }
 }
 
 @media (max-width: 600px) {
@@ -108,18 +121,20 @@
   .--skins-blocks { height: 14vh; }
   .--skins-blocks.--special-skin { height: 25vh; }
 
-  .reload-all-skins { font-size: 0.35rem; }
+  .reload-all-skins { font-size: 0.45rem; }
 
-  .close-skin-window { font-size: 1.5rem; }
+  .math-new-skin-window .close-skin-window { font-size: 1.7rem; }
+
+  .textAnswer, .send-answer { height: 6%; }
+  .send-answer { width: 38%; }
 }
 
 @media (max-width: 510px) {
-  button:hover { border: none; box-shadow: none; }
   .stats-window p { font-size: 1.5rem; }
   .textAnswer { height: 8%; font-size: 1.15rem; }
   .textAnswer::placeholder { font-size: 1.15rem; }
 
-  .send-answer { font-size: 1.1rem; width: 35%; height: 8%; }
+  .send-answer { font-size: 0.7rem; width: 35%; height: 8%; }
 
   .--magazine-block-goldBorder h2, .backPack-goldBorder-block h2,
   .back-pack-spec h2, .--magazine-block-spec h2,
@@ -129,7 +144,21 @@
   .back-pack-spec p, .--magazine-block-spec p,
   .--magazine-block p, .--backPack-block p { font-size: 0.5rem; }
 
-  .reload-all-skins { font-size: 0.25rem; width: 10vw; height: 15px; }
-
   .player-goals h1 { font-size: 1.5rem; }
+
+  .--all-goals-block > div :last-child, .--all-goals-element :last-child { font-size: 0.75rem; }
+}
+
+@media (hover: none) {
+  button:hover {
+    border: none;
+    box-shadow: none;
+  }
+  p:hover { font-size: initial; }
+
+  button { transition: transform .2s; }
+  button:active {
+    border: var(--math-border);
+    transform: scale(0.97);
+  }
 }
