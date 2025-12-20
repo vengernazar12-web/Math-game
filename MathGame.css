@@ -1,4 +1,14 @@
-* { margin: 0; padding: 0; border: none; outline: none; box-sizing: border-box; user-select: none; text-decoration: none; list-style: none; }
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  user-select: none;
+  text-decoration: none;
+  list-style: none;
+}
+pre, p { text-wrap: wrap; }
 /* Теми/скіни для гри math */
 :root {
   --color-1: black;
@@ -439,6 +449,12 @@ button:disabled:hover { background: #444; color: black; box-shadow: none; }
 
 .open-math-backPack2 { top: 35vh; }
 
+.--magazine-block-goldBorder button, .backPack-goldBorder-block button,
+.back-pack-spec button, .--magazine-block-spec button,
+.--magazine-block button, .--backPack-block button { width: 100%; position: absolute; left: 0; bottom: 0 }
+
+.--skin-btn { width: min(400px, 96.5%); }
+
 /* All math big-containers styles (Великі блоки на весь екран) */
 .--math-big-block { background: var(--math-bgc-color); color: var(--math-text-color); text-shadow: var(--math-text-shadow); }
 
@@ -673,17 +689,18 @@ button:disabled:hover { background: #444; color: black; box-shadow: none; }
   color: black;
   text-shadow: 0 0 6px black;
 }
-.--skins-blocks.--special-skin { height: 55vh; }
+.--skins-blocks.--special-skin { height: 50vh; }
 
 .--magazine-block, .--backPack-block {
   width: 37vw;
   height: 17vh;
   margin: 50px 5vw;
   text-align: center;
+  position: relative
 }
 
-.--magazine-block-goldBorder, .backPack-goldBorder-block { width: 80vw; border: 4px solid gold; margin: 0 auto; }
-.back-pack-spec, .--magazine-block-spec { width: 80vw; border: 4px solid blueviolet; margin: 10px auto; }
+.--magazine-block-goldBorder, .backPack-goldBorder-block { width: 80vw; border: 4px solid gold; margin: 0 auto; position: relative }
+.back-pack-spec, .--magazine-block-spec { width: 80vw; border: 4px solid blueviolet; margin: 10px auto; position: relative; }
 
 .passed { background: #0008f6; color: yellow; text-shadow: 0 0 6px yellow; }
 .active { background: green; color: blueviolet; text-shadow: 0 0 6px blueviolet; }
@@ -693,9 +710,9 @@ button:disabled:hover { background: #444; color: black; box-shadow: none; }
 
 .helpWindow pre { font-size: 1.5rem; color: var(--math-text-color); text-shadow: var(--math-text-shadow); }
 
-.stats-window * p { font-size: 3rem; color: var(--math-text-color); text-shadow: var(--math-text-shadow); }
+.stats-window p { font-size: 3rem; color: var(--math-text-color); text-shadow: var(--math-text-shadow); }
 
-.text-content { font-size: 2.5rem; color: var(--math-text-color); text-shadow: var(--math-text-shadow); text-wrap: wrap; }
+.text-content { font-size: 2.5rem; color: var(--math-text-color); text-shadow: var(--math-text-shadow);  }
 
 .coins {
   display: none;

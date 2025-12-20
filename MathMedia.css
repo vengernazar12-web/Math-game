@@ -1,0 +1,135 @@
+@media (max-width: 1200px) {
+  .console-block { width: 50vw; }
+
+  .content-block { height: 70vh; }
+  .textAnswer { width: 55%; height: 15%; }
+  .send-answer { width: 40%; height: 15%; }
+  .open-text-area { font-size: 1.2rem; height: 15%; }
+  .text-area { height: 30%; }
+  .playInfo > p { border: none; }
+
+  .reload-all-skins {
+    font-size: 0.7rem;
+    width: 200px;
+    right: 75px;
+  }
+}
+
+@media (max-width: 975px) {
+  .playInfo {
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 39vw;
+    grid-template-areas:
+    'difficulty turn'
+    'PS BS'
+    'ScoreR ScoreR';
+  }
+  .corrSerries { display: none; }
+  .okay { top: 85px; width: 20vw; left: 40vw; }
+  .show-new-goals-block > pre { font-size: 1.9rem; }
+  .content-block pre { font-size: 1.7rem }
+  .content-block { left: 25px; }
+
+  .player-stats2,
+  .open-player-goals2,
+  .open-math-backPack2,
+  .show-hint,
+  .generate-easy-asc,
+  .skip-math-asc { width: 18vw; }
+
+  .skip-math-asc { bottom: 10vh; }
+  .generate-easy-asc { bottom: 15vh; }
+  .show-hint { bottom: 20vh; }
+
+  .console-block { width: 70vw; }
+
+  .clear-console { font-size: 2rem; }
+
+  .--magazine-block-goldBorder, .backPack-goldBorder-block,
+  .back-pack-spec, .--magazine-block-spec,
+  .--magazine-block, .--backPack-block { height: 11vh; }
+
+  .--magazine-block { height: 13vh; }
+
+  .close-math-magazine { font-size: 2.2rem; }
+}
+
+@media (max-width: 881px) {
+  .playInfo > p { font-size: 0.82rem; }
+  button { font-size: 0.9rem; }
+  .open-text-area { font-size: 0.7rem; height: 8%; bottom: 15%; }
+  .textAnswer, .textAnswer::placeholder { font-size: 1.25rem; }
+  .textAnswer, .send-answer { padding: 10px; height: 10%; }
+  .text-area { bottom: 15%; }
+  .help { bottom: 15% }
+  .helpWindow pre { font-size: 0.8rem; }
+  .helpWindow { width: 100vw; left: 0;  }
+  .help-content-block { width: 100vw; left: 0; }
+  .console-block { font-size: 1rem; }
+
+  .stats-window  p { font-size: 1.9rem; }
+
+  .--skins-blocks { font-size: 1.75rem; height: 25vh; }
+
+  .player-goals p { font-size: 1rem; }
+  .player-goals h2 { font-size: 1.2rem; }
+  .player-goals .--resClass { height: 12vh; }
+
+  .--magazine-block-goldBorder h2, .backPack-goldBorder-block h2,
+  .back-pack-spec h2, .--magazine-block-spec h2,
+  .--magazine-block h2, .--backPack-block h2 { font-size: 1rem; }
+
+  .--magazine-block-goldBorder p, .backPack-goldBorder-block p,
+  .back-pack-spec p, .--magazine-block-spec p,
+  .--magazine-block p, .--backPack-block p { font-size: 0.75rem; }
+
+  .--magazine-block-goldBorder, .backPack-goldBorder-block,
+  .back-pack-spec, .--magazine-block-spec,
+  .--magazine-block, .--backPack-block { height: 9vh; }
+
+  .reload-all-skins { font-size: 0.55rem; width: 14vw; }
+}
+
+@media (max-width: 675px) {
+  .playInfo { display: none; }
+  .console-block { width: 90vw; }
+  .help { font-size: 0.6rem; }
+  .reload-all-skins { font-size: 0.45rem; }
+  .player-stats3 { width: 100px; }
+}
+
+@media (max-width: 600px) {
+  .player-stats3 { top: 50px; }
+
+  .math-new-skin-window h2 { font-size: 1rem; }
+  .math-new-skin-window p, .math-new-skin-window pre { font-size: 0.7rem; }
+  .math-new-skin-window h4 { font-size: 0.5rem }
+
+  .--skins-blocks { height: 14vh; }
+  .--skins-blocks.--special-skin { height: 25vh; }
+
+  .reload-all-skins { font-size: 0.35rem; }
+
+  .close-skin-window { font-size: 1.5rem; }
+}
+
+@media (max-width: 510px) {
+  button:hover { border: none; box-shadow: none; }
+  .stats-window p { font-size: 1.5rem; }
+  .textAnswer { height: 8%; font-size: 1.15rem; }
+  .textAnswer::placeholder { font-size: 1.15rem; }
+
+  .send-answer { font-size: 1.1rem; width: 35%; height: 8%; }
+
+  .--magazine-block-goldBorder h2, .backPack-goldBorder-block h2,
+  .back-pack-spec h2, .--magazine-block-spec h2,
+  .--magazine-block h2, .--backPack-block h2 { font-size: 0.75rem; }
+
+  .--magazine-block-goldBorder p, .backPack-goldBorder-block p,
+  .back-pack-spec p, .--magazine-block-spec p,
+  .--magazine-block p, .--backPack-block p { font-size: 0.5rem; }
+
+  .reload-all-skins { font-size: 0.25rem; width: 10vw; height: 15px; }
+
+  .player-goals h1 { font-size: 1.5rem; }
+}

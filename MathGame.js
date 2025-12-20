@@ -764,13 +764,6 @@ function checkAllMagazineBtns() {
 
 const pDiffNums = { 1: 'easy', 2: 'medium', 3: 'hard', 4: 'megaHard' }
 
-window.addEventListener('beforeunload', () => {
-  if(mathGameContent.classList.contains('show') && PS === 0 && badPlayerAnsSer <= 1) {
-    localStorage.setItem('play-number', +localStorage.getItem('play-number') - 1);
-    localStorage.setItem('bad-answer', +localStorage.getItem('bad-answer') - badPlayerAnsSer);
-  }
-});
-
 // Делегування
 document.querySelectorAll('.magazine-skin-blocks, .magazine-cursor-blocks').forEach(v => v.addEventListener('click', e => {
   if(e.target.tagName === 'BUTTON') {
@@ -919,10 +912,6 @@ mathGameContent.addEventListener('click', ({target: {classList}}) => {
   }
   else if(classList.contains('help')) helpWindow.classList.add('show');
   else if(classList.contains('closeInitialGame')) {
-    if(PS === 0 && badPlayerAnsSer <= 1) {
-      localStorage.setItem('play-number', +localStorage.getItem('play-number') - 1);
-      localStorage.setItem('bad-answer', +localStorage.getItem('bad-answer') - badPlayerAnsSer);
-    }
     mathGameContent.classList.remove('show');
     inputAnswer.classList.remove('show');
     sendAnswerBtn.classList.remove('show');
