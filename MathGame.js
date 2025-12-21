@@ -761,7 +761,6 @@ function checkAllMagazineBtns() {
 }
 
 // All no-magazine products
-
 const pDiffNums = { 1: 'easy', 2: 'medium', 3: 'hard', 4: 'megaHard' }
 
 // Делегування
@@ -912,6 +911,7 @@ mathGameContent.addEventListener('click', ({target: {classList}}) => {
   }
   else if(classList.contains('help')) helpWindow.classList.add('show');
   else if(classList.contains('closeInitialGame')) {
+    if(PS < 1 && BS < 1) localStorage.setItem('play-number', +localStorage.getItem('play-number') - 1)
     mathGameContent.classList.remove('show');
     inputAnswer.classList.remove('show');
     sendAnswerBtn.classList.remove('show');

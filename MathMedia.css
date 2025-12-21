@@ -159,8 +159,8 @@
 }
 
 @media (max-width: 510px) {
-  .stats-window p { font-size: 1.5rem; }
-  .stats-window p:hover { font-size: 1.5rem; }
+  .stats-window p { font-size: 1.35rem; }
+  .stats-window p:hover { font-size: 1.35rem; }
 
   .textAnswer { height: 8%; font-size: 0.85rem; }
   .textAnswer::placeholder { font-size: 0.85rem; }
@@ -179,14 +179,14 @@
 
   .--all-goals-block > div :last-child, .--all-goals-element :last-child { font-size: 0.75rem; }
 
-  .reload-all-skins { top: 52px; right: 5px; }
+  .reload-all-skins { top: 52px; right: 5px; width: 22.5vw; }
 
   .content-block { left: 5px; }
   .help { font-size: 0.45rem; width: 60%; }
 
   .open-text-area { font-size: 0.35rem; }
 
-  p, pre { text-shadow: 0 0 2px !important; }
+  p, pre, h1, h2, h3, h4 { text-shadow: 0 0 1px; }
 
   body, .math-game-difficulty-window { padding-top: 100px; }
 
