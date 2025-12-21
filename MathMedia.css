@@ -147,8 +147,8 @@
   .stats-window p { font-size: 1.5rem; }
   .stats-window p:hover { font-size: 1.5rem; }
 
-  .textAnswer { height: 8%; font-size: 1rem; }
-  .textAnswer::placeholder { font-size: 1rem; }
+  .textAnswer { height: 8%; font-size: 0.7rem; }
+  .textAnswer::placeholder { font-size: 0.7rem; }
 
   .send-answer { font-size: 0.7rem; width: 35%; height: 8%; }
 
