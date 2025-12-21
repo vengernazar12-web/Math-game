@@ -200,5 +200,9 @@
   p { transition: none !important; }
 
   .magazine-cursor-blocks { display: none; }
-  .magazine-content { margin-bottom: 75px; }
+  .magazine-content { padding-bottom: 75px; }
+}
+
+@media (max-height: 750px) {
+  .playInfo { display: none; }
 }
