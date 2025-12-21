@@ -582,6 +582,7 @@ const musicPlayText = document.querySelector('.its-music-play-text');
 const musicLoopText = document.querySelector('.its-loop-text');
 const musicRandomLoopText = document.querySelector('.its-randomLoop-text');
 
+// Audio ended
 allAudiosArr.forEach(v => v.addEventListener('ended', () => {
   if(v !== currentAudio || currentAudio.loop) return;
   else if(getRandomMusic) {
@@ -594,6 +595,11 @@ allAudiosArr.forEach(v => v.addEventListener('ended', () => {
     currentAudio.play();
     musicPlayText.style.display = 'block';
     musicLoopText.style.display = 'none';
+
+    const a = allAudiosNameArr.find(v => allAudiosObj[v] === currentAudio);
+    const p = document.createElement('p');
+    p.textContent = `Запущено ${a}`;
+    consoleRender(p);
   }
   else musicPlayText.style.display = 'none';
 }))
@@ -792,5 +798,4 @@ btnSendCommand.addEventListener('click', () => {
 
   commandSyntaxText.style.display = 'none';
   goCommand(type, item, all)
-
 })

@@ -143,7 +143,7 @@
     left: 5px;
   }
 
-  .text-area, .text-area::placeholder { font-size: 0.7rem; }
+  .text-area, .text-area::placeholder { font-size: 0.85rem; }
   .text-area { width: 60%; }
 
   .console-block { min-height: 75vh; }
@@ -159,8 +159,8 @@
   .stats-window p { font-size: 1.5rem; }
   .stats-window p:hover { font-size: 1.5rem; }
 
-  .textAnswer { height: 8%; font-size: 0.7rem; }
-  .textAnswer::placeholder { font-size: 0.7rem; }
+  .textAnswer { height: 8%; font-size: 0.85rem; }
+  .textAnswer::placeholder { font-size: 0.85rem; }
 
   .send-answer { font-size: 0.7rem; width: 35%; height: 8%; }
 
