@@ -741,7 +741,7 @@ consoleInput.addEventListener('input', e => {
 
 consoleInput.addEventListener('focus', () => document.documentElement.scrollTop = 0)
 
-.inputAnswer.addEventListener('focus', () => document.documentElement.scrollTop = 0)
+inputAnswer.addEventListener('focus', () => document.documentElement.scrollTop = 0)
 
 function addElemToCommList(comm) {
   const el = document.createElement('li');
@@ -792,4 +792,5 @@ btnSendCommand.addEventListener('click', () => {
 
   commandSyntaxText.style.display = 'none';
   goCommand(type, item, all)
+
 })
