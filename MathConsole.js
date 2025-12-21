@@ -734,7 +734,10 @@ consoleInput.addEventListener('input', e => {
     if(ln === text.length) addElemToCommList(comm);
   }
 
-  if(text.includes('music')) allAudiosNameArr.forEach(v => { if( v.includes(text.replace('music', '').trim()) ) addElemToCommList(`/music ${v}`) })
+  if(text.includes('music')) allAudiosNameArr.forEach(v => { if( v.includes(text.replace('music', '').trim()) ) addElemToCommList(`/music ${v}`) });
+
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 
   if(!allCommandsListElem.children.length) {allCommandsListIdx = -1; return allCommandsListElem.style.display = 'none'};
 })

@@ -90,6 +90,8 @@
   .--magazine-block, .--backPack-block { height: 10.5vh; }
 
   .reload-all-skins { font-size: 0.55rem; width: 15vw; }
+
+  .show-new-goals-block > pre { font-size: 0.9rem; }
 }
 
 @media (max-width: 675px) {
@@ -141,6 +143,9 @@
     top: 75px;
     left: 5px;
   }
+
+  .text-area, .text-area::placeholder { font-size: 0.7rem; }
+  .text-area { width: 60%; }
 }
 
 @media (max-width: 510px) {
