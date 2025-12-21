@@ -95,7 +95,6 @@
 }
 
 @media (max-width: 675px) {
-  .playInfo { display: none; }
   .console-block { width: 80vw; left: 10vw; }
   .help { font-size: 0.6rem; }
   .reload-all-skins { font-size: 0.45rem; }
@@ -184,12 +183,18 @@
 
   .open-text-area { font-size: 0.35rem; }
 
-  p, pre { text-shadow: 0 0 3px !important; }
+  p, pre { text-shadow: 0 0 2px !important; }
 
   body, .math-game-difficulty-window { padding-top: 100px; }
 
-  .--skins-blocks { width: 92vw; }
-  .--all-goals-block { width: 92vw; }
+  .--skins-blocks { width: 95vw; }
+  .allGoalsContainer > div > div,
+  .goal-percent,
+  .get-classic-skin-goals-blocks,
+  .goal-allDiffRecord-one { width: 95vw; }
+
+  .allGoalsContainer h2 { font-size: 1rem; }
+  .allGoalsContainer p { font-size: 0.9rem; }
 }
 
 @media (hover: none) {
@@ -200,9 +205,9 @@
   p { transition: none !important; }
 
   .magazine-cursor-blocks { display: none; }
-  .magazine-content { padding-bottom: 75px; }
+  .magazine-content { padding: 75px 0; }
 }
 
-@media (max-height: 750px) {
+@media (max-height: 750px), (max-width: 675px) {
   .playInfo { display: none; }
 }
