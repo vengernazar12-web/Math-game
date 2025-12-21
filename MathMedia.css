@@ -68,12 +68,14 @@
   .console-block { font-size: 1rem; }
 
   .stats-window  p { font-size: 1.9rem; }
+  .stats-window p:hover { font-size: 1.9rem; }
 
   .--skins-blocks { font-size: 1.75rem; height: 25vh; }
 
   .player-goals p { font-size: 1rem; }
   .player-goals h2 { font-size: 1.2rem; }
   .player-goals .--resClass { height: 12vh; }
+  .player-goals .close-player-goals { font-size: 1.7rem; }
 
   .--magazine-block-goldBorder h2, .backPack-goldBorder-block h2,
   .back-pack-spec h2, .--magazine-block-spec h2,
@@ -87,7 +89,7 @@
   .back-pack-spec, .--magazine-block-spec,
   .--magazine-block, .--backPack-block { height: 9vh; }
 
-  .reload-all-skins { font-size: 0.55rem; width: 14vw; }
+  .reload-all-skins { font-size: 0.55rem; width: 15vw; }
 }
 
 @media (max-width: 675px) {
@@ -126,11 +128,23 @@
   .math-new-skin-window .close-skin-window { font-size: 1.7rem; }
 
   .textAnswer, .send-answer { height: 6%; }
-  .send-answer { width: 38%; }
+  .send-answer { width: 38%; font-size: 0.6rem; }
+
+  .show-hint, .generate-easy-asc, .skip-math-asc, .player-stats2, .open-player-goals2, .open-math-backPack2 {
+    width: 15vw;
+    font-size: 0.7rem;
+    right: 10px;
+  }
+
+  .content-block pre {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 510px) {
   .stats-window p { font-size: 1.5rem; }
+  .stats-window p:hover { font-size: 1.5rem; }
+
   .textAnswer { height: 8%; font-size: 1.15rem; }
   .textAnswer::placeholder { font-size: 1.15rem; }
 
@@ -147,6 +161,15 @@
   .player-goals h1 { font-size: 1.5rem; }
 
   .--all-goals-block > div :last-child, .--all-goals-element :last-child { font-size: 0.75rem; }
+
+  .reload-all-skins { top: 52px; right: 5px; }
+
+  .content-block { left: 5px; }
+  .help { font-size: 0.45rem; width: 60%; }
+
+  .open-text-area { font-size: 0.35rem; }
+
+  p, pre { text-shadow: 0 0 3px !important; }
 }
 
 @media (hover: none) {
@@ -154,11 +177,5 @@
     border: none;
     box-shadow: none;
   }
-  p:hover { font-size: initial; }
-
-  button { transition: transform .2s; }
-  button:active {
-    border: var(--math-border);
-    transform: scale(0.97);
-  }
+  p { transition: none !important; }
 }

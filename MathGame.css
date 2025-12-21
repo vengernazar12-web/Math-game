@@ -356,9 +356,8 @@ button:disabled:hover { background: #444; color: black; box-shadow: none; }
   top: 25px;
   right: 25px;
   cursor: pointer;
-  transition: font-size .2s;
   font-size: 3rem;
-}.close-stats-window:hover { font-size: 3.2rem }
+}
 
 .send-answer {
   display: none;
@@ -399,9 +398,8 @@ button:disabled:hover { background: #444; color: black; box-shadow: none; }
   top: 15px;
   right: 15px;
   font-size: 3rem;
-  transition: font-size .2s;
   cursor: pointer;
-}.close-player-goals:hover { font-size: 3.2rem; }
+}
 
 .help { position: absolute; bottom: 15vh; width: 50vw; left: 5px; display: none; }
 .help.show { display: block; }
@@ -411,10 +409,8 @@ button:disabled:hover { background: #444; color: black; box-shadow: none; }
   top: 10px;
   right: 10px;
   font-size: 3rem;
-  transition: font-size .2s;
   cursor: pointer;
 }
-.close-skin-window:hover { font-size: 3.2rem; }
 
 .reload-all-skins {
   position: absolute;
@@ -711,6 +707,7 @@ button:disabled:hover { background: #444; color: black; box-shadow: none; }
 .helpWindow pre { font-size: 1.5rem; color: var(--math-text-color); text-shadow: var(--math-text-shadow); }
 
 .stats-window p { font-size: 3rem; color: var(--math-text-color); text-shadow: var(--math-text-shadow); }
+.stats-window p:hover { font-size: 3rem; }
 
 .text-content { font-size: 2.5rem; color: var(--math-text-color); text-shadow: var(--math-text-shadow);  }
 
@@ -1023,26 +1020,26 @@ body::-webkit-scrollbar, .all-commands-list-element::-webkit-scrollbar, .helpWin
 .alias-command::after { content: 'alias'; font-size: 0.6rem; pointer-events: none; padding-left: 10px; }
 
 /* Cursors */
-body.minecraft-sword-cursor { cursor: url('../Img/cursors/icons8-меч-из-майнкрафта-30.png'), auto; }
+body.minecraft-sword-cursor { cursor: url('Img/cursors/icons8-меч-из-майнкрафта-30.png'), auto; }
 body.minecraft-sword-cursor * { cursor: inherit; }
 
-body.minecraft-exe-cursor { cursor: url('../Img/cursors/icons8-minecraft-топор-30.png'), auto; }
+body.minecraft-exe-cursor { cursor: url('Img/cursors/icons8-minecraft-топор-30.png'), auto; }
 body.minecraft-exe-cursor * { cursor: inherit; }
 
-body.minecraft-pickaxe-cursor { cursor: url('../Img/cursors/icons8-minecraft-кирка-30.png'), auto; }
+body.minecraft-pickaxe-cursor { cursor: url('Img/cursors/icons8-minecraft-кирка-30.png'), auto; }
 body.minecraft-pickaxe-cursor * { cursor: inherit; }
 
-body.mouse-cursor { cursor: url('../Img/cursors/мишка.png'), auto; }
+body.mouse-cursor { cursor: url('Img/cursors/мишка.png'), auto; }
 body.mouse-cursor * { cursor: inherit; }
 
-body.finger-cursor { cursor: url('../Img/cursors/курсор-рука.png'), auto; }
+body.finger-cursor { cursor: url('Img/cursors/курсор-рука.png'), auto; }
 body.finger-cursor * { cursor: inherit; }
 
-body.simpson-cursor { cursor: url('../Img/cursors/icons8-homer-simpson-30.png'), auto; }
+body.simpson-cursor { cursor: url('Img/cursors/icons8-homer-simpson-30.png'), auto; }
 body.simpson-cursor * { cursor: inherit; }
 
-body.scream-cursor { cursor: url('../Img/cursors/icons8-scream-30.png'), auto; }
+body.scream-cursor { cursor: url('Img/cursors/icons8-scream-30.png'), auto; }
 body.scream-cursor * { cursor: inherit; }
 
-body.anonymous-cursor { cursor: url('../Img/cursors/icons8-anonymous-mask-30.png'), auto; }
+body.anonymous-cursor { cursor: url('Img/cursors/icons8-anonymous-mask-30.png'), auto; }
 body.anonymous-cursor * { cursor: inherit; }
