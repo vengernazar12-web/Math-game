@@ -973,3 +973,9 @@ coinsText.classList.add('show');
 if(localStorage.getItem('musics') === 'buy') musProgress.classList.add('show');
 if(localStorage.getItem('activeCursor')) document.body.classList.add(localStorage.getItem('activeCursor'));
 if(localStorage.getItem('dblCoins') === 'buy') plusCoinsInfo.classList.add('dbl-active-text');
+if(document.body.clientWidth < 550) {
+  sendAnswerBtn.textContent = 'Надіслати';
+  btnOpenHelpWindow.textContent = 'Підказки по прикладам';
+  openTextArea.textContent = 'Вікно для считання';
+  inputAnswer.setAttribute('placeholder', 'Введіть відповідь...');
+};

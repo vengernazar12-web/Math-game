@@ -87,7 +87,7 @@
 
   .--magazine-block-goldBorder, .backPack-goldBorder-block,
   .back-pack-spec, .--magazine-block-spec,
-  .--magazine-block, .--backPack-block { height: 9vh; }
+  .--magazine-block, .--backPack-block { height: 10.5vh; }
 
   .reload-all-skins { font-size: 0.55rem; width: 15vw; }
 }
@@ -131,13 +131,15 @@
   .send-answer { width: 38%; font-size: 0.6rem; }
 
   .show-hint, .generate-easy-asc, .skip-math-asc, .player-stats2, .open-player-goals2, .open-math-backPack2 {
-    width: 15vw;
+    width: 17vw;
     font-size: 0.7rem;
-    right: 10px;
+    right: 8px;
   }
 
   .content-block pre {
     font-size: 1.2rem;
+    position: absolute;
+    top: 75px;
   }
 }
 
@@ -170,6 +172,8 @@
   .open-text-area { font-size: 0.35rem; }
 
   p, pre { text-shadow: 0 0 3px !important; }
+
+  body, .math-game-difficulty-window { padding-top: 100px; }
 }
 
 @media (hover: none) {

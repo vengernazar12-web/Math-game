@@ -900,6 +900,8 @@ body.gold-border-active .--math-mini-block {
   border-radius: 7px;
   text-align: center;
   scroll-behavior: smooth;
+  color: black;
+  text-shadow: none;
 }
 .console-text-block > pre { user-select: text;  }
 .console-input {
@@ -953,7 +955,6 @@ body.gold-border-active .--math-mini-block {
   cursor: pointer;
 }
 
-.console-text-block { color: black; text-shadow: none; }
 .console-text-block pre.wrong-text { color: red; text-shadow: 0 0 4px red; display: block; border-left: 4px solid red; }
 .console-text-block pre.correct-text { color: blue; text-shadow: 0 0 4px blue; display: block; border-left: 4px solid blue; }
 
