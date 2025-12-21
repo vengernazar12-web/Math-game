@@ -92,6 +92,7 @@
   .reload-all-skins { font-size: 0.55rem; width: 15vw; }
 
   .show-new-goals-block > pre { font-size: 0.9rem; }
+  .show-new-goals-block { height: 14vh; }
 }
 
 @media (max-width: 675px) {
@@ -153,6 +154,8 @@
   .all-commands-list-element { font-size: 0.55rem; }
 
   .--stats-style { width: 92vw;}
+
+  .closeMathDifficultyWindow { width: 50%; }
 }
 
 @media (max-width: 510px) {
