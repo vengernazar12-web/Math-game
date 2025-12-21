@@ -483,7 +483,7 @@ let musicTimeProgress = document.querySelector('.music-time');
 
 function updateProgress() {
   if(!currentAudio) return;
-  musProgress.max = currentAudio.duration;
+  if (!isNaN(currentAudio.duration) && isFinite(currentAudio.duration)) musProgress.max = currentAudio.duration;
   musProgress.value = currentAudio.currentTime;
   const m = Math.floor(currentAudio.currentTime / 60),
   s = Math.floor(currentAudio.currentTime % 60),
