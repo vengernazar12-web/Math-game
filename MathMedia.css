@@ -147,8 +147,8 @@
   .text-area, .text-area::placeholder { font-size: 0.85rem; }
   .text-area { width: 60%; }
 
-  .console-block { max-height: 75vh; }
-  .console-text-block { max-height: 55vh; }
+  .console-block { height: 75vh; }
+  .console-text-block { height: 55vh; }
   .console-block pre { font-size: 0.8rem; }
   .command-syntax-text { font-size: 0.7rem; }
   .all-commands-list-element { font-size: 0.6rem; }
