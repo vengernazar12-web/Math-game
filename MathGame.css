@@ -606,7 +606,6 @@ button:disabled:hover { background: #444; color: black; box-shadow: none; }
 }
 
 .--stats-style {
-  height: auto;
   width: 80vw;
   padding: 25px;
   margin: 25px auto;

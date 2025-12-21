@@ -146,6 +146,14 @@
 
   .text-area, .text-area::placeholder { font-size: 0.7rem; }
   .text-area { width: 60%; }
+
+  .console-block { min-height: 75vh; }
+  .console-text-block { max-height: 55vh; }
+  .console-block pre { font-size: 0.8rem; }
+  .command-syntax-text { font-size: 0.7rem; }
+  .all-commands-list-element { font-size: 0.55rem; }
+
+  .--stats-style { width: 92vw;}
 }
 
 @media (max-width: 510px) {
@@ -179,6 +187,9 @@
   p, pre { text-shadow: 0 0 3px !important; }
 
   body, .math-game-difficulty-window { padding-top: 100px; }
+
+  .--skins-blocks { width: 92vw; }
+  .--all-goals-block { width: 92vw; }
 }
 
 @media (hover: none) {
@@ -187,4 +198,7 @@
     box-shadow: none;
   }
   p { transition: none !important; }
+
+  .magazine-cursor-blocks { display: none; }
+  .magazine-content { margin-bottom: 75px; }
 }

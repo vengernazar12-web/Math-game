@@ -736,11 +736,12 @@ consoleInput.addEventListener('input', e => {
 
   if(text.includes('music')) allAudiosNameArr.forEach(v => { if( v.includes(text.replace('music', '').trim()) ) addElemToCommList(`/music ${v}`) });
 
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-
   if(!allCommandsListElem.children.length) {allCommandsListIdx = -1; return allCommandsListElem.style.display = 'none'};
 })
+
+consoleInput.addEventListener('focus', () => document.documentElement.scrollTop = 0)
+
+.inputAnswer.addEventListener('focus', () => document.documentElement.scrollTop = 0)
 
 function addElemToCommList(comm) {
   const el = document.createElement('li');
