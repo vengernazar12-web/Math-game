@@ -148,7 +148,7 @@
   .text-area { width: 60%; }
 
   .console-block { height: 75vh; }
-  .console-text-block { height: 60vh; }
+  .console-text-block { height: 65vh; }
   .console-block pre { font-size: 0.8rem; }
   .command-syntax-text { font-size: 0.7rem; }
   .all-commands-list-element { font-size: 0.6rem; }
