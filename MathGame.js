@@ -1,4 +1,4 @@
-/*Music progress bar */ const musProgress = document.querySelector('progress');
+/*Music progress bar */ const musProgress = document.querySelector('.progress');
 // Змінні для гри
 let playerTurnMath = true,
 playDiff = null,
