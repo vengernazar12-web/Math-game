@@ -466,6 +466,7 @@ button:disabled:hover { background: #444; color: black; box-shadow: none; }
   align-items: center;
   gap: 50px;
   transition: scale .5s;
+  overflow-y: auto;
 }.math-game-difficulty-window.show { scale: 1; }
 
 .game-content {
@@ -980,6 +981,7 @@ body.gold-border-active .--math-mini-block {
   color: #fff;
   text-shadow: 0 0 4px #000;
   font-size: 1rem;
+  pointer-events: none;
 }
 
 /* Classic styles */

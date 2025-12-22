@@ -570,6 +570,7 @@ const catsImg = [
 ]
 
 const commandSyntaxText = document.querySelector('.command-syntax-text');
+commandSyntaxText.addEventListener('click', () => consoleInput.value = commandSyntaxText.textContent.replace('Аліас команда з синтаксисом ', ''));
 
 const consoleInput = document.querySelector('.console-input');
 const openMathConsole = document.querySelector('.open-math-console');

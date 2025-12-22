@@ -104,7 +104,13 @@
   body { justify-content: space-around; }
   .content-block { height: 50vh; }
 
-  .show-hint, .generate-easy-asc, .skip-math-asc, .player-stats2, .open-player-goals2, .open-math-backPack2 { width: 15vw; }
+  .show-hint,
+  .generate-easy-asc,
+  .skip-math-asc,
+  .player-stats2,
+  .open-player-goals2,
+  .open-math-backPack2 { width: 15vw; border-radius: 10px; }
+
   .show-hint { bottom: 40vh; }
   .generate-easy-asc { bottom: 35vh; }
   .skip-math-asc { bottom: 30vh; }
@@ -129,10 +135,15 @@
 
   .math-new-skin-window .close-skin-window { font-size: 1.7rem; }
 
-  .textAnswer, .send-answer { height: 6%; }
+  .textAnswer, .send-answer { height: 6%; border-radius: 7px; }
   .send-answer { width: 38%; font-size: 0.6rem; }
 
-  .show-hint, .generate-easy-asc, .skip-math-asc, .player-stats2, .open-player-goals2, .open-math-backPack2 {
+  .show-hint,
+  .generate-easy-asc,
+  .skip-math-asc,
+  .player-stats2,
+  .open-player-goals2,
+  .open-math-backPack2 {
     width: 20vw;
     font-size: 0.6rem;
   }
@@ -155,7 +166,7 @@
 
   .--stats-style { width: 92vw;}
 
-  .closeMathDifficultyWindow { width: 50%; }
+  .closeMathDifficultyWindow { width: 40%; }
 }
 
 @media (max-width: 510px) {
@@ -213,4 +224,64 @@
 
 @media (max-height: 750px), (max-width: 675px) {
   .playInfo { display: none; }
+}
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  .math-game-difficulty-window { padding: 75px 0; }
+  .player-stats2,
+  .open-player-goals2,
+  .open-math-backPack2,
+  .show-hint,
+  .generate-easy-asc,
+  .skip-math-asc{ width: 18vw; }
+
+  .player-stats2 { top: 15px; }
+  .open-player-goals2 { top: 65px; }
+  .open-math-backPack2 { top: 115px; }
+
+  .skip-math-asc { bottom: 15px; }
+  .generate-easy-asc { bottom: 65px; }
+  .show-hint { bottom: 115px; }
+
+  .textAnswer,
+  .textAnswer::placeholder,
+  .send-answer,
+  .text-area, .text-area::placeholder{ font-size: 0.75rem; }
+
+  .textAnswer, .send-answer { height: 25px; bottom: 5px; }
+
+  .content-block { top: auto; bottom: 17vh; }
+  .content-block > pre { top: 1px; font-size: 1rem; left: auto; }
+
+  .coins { font-size: 1rem; }
+
+  .plus-coins-forDiff { font-size: 1rem; bottom: 10vh; }
+
+  .okay, .closeInitialGame { width: 30vw; height: 6vh; left: 35vw; }
+
+  .okay { top: 13vh; }
+
+  .open-text-area { bottom: 23%; }
+
+  .stats-window p { font-size: 1.25rem; }
+  .stats-window p:hover { font-size: 1.25rem; }
+  .stats-window h1 { font-size: 1.5rem; }
+
+  .player-goals .--resClass { height: 20vh; }
+
+  .math-new-skin-window p { font-size: 1rem; }
+  .math-new-skin-window h2 { font-size: 1.2rem; }
+  .math-new-skin-window h4 { font-size: 0.7rem; }
+
+  .--skin-btn { width: min(250px, 96.5%); height: 25px; }
+
+  .--magazine-block-goldBorder, .backPack-goldBorder-block,
+  .back-pack-spec, .--magazine-block-spec,
+  .--magazine-block, .--backPack-block { height: 23vh; }
+  .--magazine-block-goldBorder button, .backPack-goldBorder-block button,
+  .back-pack-spec button, .--magazine-block-spec button,
+  .--magazine-block button, .--backPack-block button { height: 25px; }
+
+  /* Mobile(rotate) console */
+  .console-block { width: auto; height: auto; position: fixed; inset: 0; }
 }
