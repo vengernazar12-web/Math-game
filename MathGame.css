@@ -874,13 +874,7 @@ body.gold-border-active .--math-mini-block {
 /* Console styles */
 .console-block {
   scale: 0;
-  position: fixed;
-  top: 0;
-  left: 60px;
-  width: 35vw;
-  min-height: 20vh;
-  max-height: 95vh;
-  height: auto;
+  position: fixed; inset: 0;
   background-color: color-mix(in srgb, white 75%, transparent);
   border-radius: 0 0 15px 15px;
   display: flex;
@@ -892,7 +886,7 @@ body.gold-border-active .--math-mini-block {
 .console-text-block {
   overflow-y: auto;
   min-height: 15vh;
-  max-height: 75vh;
+  max-height: 90vh;
   height: auto;
   margin: 5px auto 50px auto;
   width: 90%;

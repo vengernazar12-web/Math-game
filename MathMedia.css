@@ -1,3 +1,10 @@
+@media (orientation: portrait) {
+  .console-block {
+    width: 60%;
+    height: 75vh;
+  }
+}
+
 @media (max-width: 1200px) {
   .console-block { width: 50vw; }
 
@@ -281,7 +288,4 @@
   .--magazine-block-goldBorder button, .backPack-goldBorder-block button,
   .back-pack-spec button, .--magazine-block-spec button,
   .--magazine-block button, .--backPack-block button { height: 25px; }
-
-  /* Mobile(rotate) console */
-  .console-block { width: auto; height: auto; position: fixed; inset: 0; }
 }
