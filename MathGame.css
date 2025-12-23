@@ -459,62 +459,62 @@ button:disabled:hover { background: #444; color: black; box-shadow: none; }
 .math-game-difficulty-window {
   position: fixed;
   inset: 0;
-  scale: 0;
+  transform: scale(0);
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
   gap: 50px;
-  transition: scale .5s;
+  transition: transform .5s;
   overflow-y: auto;
-}.math-game-difficulty-window.show { scale: 1; }
+}.math-game-difficulty-window.show { transform: scale(1); }
 
 .game-content {
-  scale: 0;
+  transform: scale(0);
   position: fixed;
   inset: 0;
-  transition: scale .5s;
-}.game-content.show { scale: 1; }
+  transition: transform .5s;
+}.game-content.show { transform: scale(1); }
 
 .helpWindow {
   width: 75vw;
   height: 75vh;
-  scale: 0;
+  transform: scale(0);
   position: fixed;
   left: 12.5vw;
   top: 20vh;
-  transition: scale .5s;
+  transition: transform .5s;
   border-radius: 15px;
   overflow-y: auto;
   text-align: center;
-}.helpWindow.show { scale: 1; }
+}.helpWindow.show { transform: scale(1); }
 
 .stats-window {
-  scale: 0;
+  transform: scale(0);
   position: fixed; inset: 0;
-  transition: scale .5s;
+  transition: transform .5s;
   text-align: center;
   overflow-y: scroll;
 }.stats-window.show { scale: 1 }
 
 .player-goals {
-  scale: 0;
-  transition: scale .5s;
+  transform: scale(0);
+  transition: transform .5s;
   position: fixed;
   inset: 0;
   text-align: center;
   overflow-y: scroll;
-}.player-goals.show { scale: 1; }
+}.player-goals.show { transform: scale(1); }
 
 .math-new-skin-window {
   position: fixed;
   inset: 0;
-  scale: 0;
-  transition: scale .5s;
+  transform: scale(0);
+  transition: transform .5s;
   text-align: center;
   overflow-y: scroll;
 }
-.math-new-skin-window.show { scale: 1 }
+.math-new-skin-window.show { transform: scale(1); }
 
 .magazine-content, .bagPack-for-products {
   position: fixed;
@@ -522,11 +522,11 @@ button:disabled:hover { background: #444; color: black; box-shadow: none; }
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  scale: 0;
-  transition: scale .5s;
+  transform: scale(0);
+  transition: transform .5s;
   overflow-y: auto;
 }
-.magazine-content.show, .bagPack-for-products.show { scale: 1; }
+.magazine-content.show, .bagPack-for-products.show { transform: scale(1); }
 
 .magazine-skin-blocks, .magazine-cursor-blocks {
   display: flex;
@@ -873,15 +873,15 @@ body.gold-border-active .--math-mini-block {
 
 /* Console styles */
 .console-block {
-  scale: 0;
+  transform: scale(0);
   position: fixed; inset: 0;
   background-color: color-mix(in srgb, white 75%, transparent);
   border-radius: 0 0 15px 15px;
   display: flex;
   justify-content: flex-end;
-  transition: scale .2s;
+  transition: transform .2s;
 }
-.console-block.show { scale: 1; }
+.console-block.show { transform: scale(1); }
 
 .console-text-block {
   overflow-y: auto;
