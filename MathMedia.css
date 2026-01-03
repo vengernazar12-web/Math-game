@@ -229,10 +229,6 @@
   .magazine-content { padding: 75px 0; }
 }
 
-@media (max-height: 750px), (max-width: 675px) {
-  .playInfo { display: none; }
-}
-
 @media (orientation: landscape) and (max-width: 1024px) {
   .math-game-difficulty-window { padding: 75px 0; }
   .player-stats2,

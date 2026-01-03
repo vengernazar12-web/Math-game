@@ -49,13 +49,6 @@ document.querySelector('.open-math-backPack').addEventListener('click', () => { 
 // All btns/texts
 const textAreaFromAnswer = document.querySelector('.text-area');
 
-const localeCorrSer = document.querySelector('.corrSerries');
-
-const scoreRecord = document.querySelector('.scoreRecord');
-const whoTurn = document.querySelector('.turn');
-const difficultyInfo = document.querySelector('.gameDifficulty');
-const playerScore = document.querySelector('.playerScore');
-const botScore = document.querySelector('.botScore');
 const sendAnswerBtn = document.querySelector('.send-answer');
 
 const btnOkay = document.querySelector('.okay');
@@ -269,11 +262,6 @@ function MathGame(v) {
   playDiff = v;
   PS = 0; BS = 0; badPlayerAnsSer = 0; goodPlayerAnsSer = 0;
   inputAnswer.value = '';
-  localeCorrSer.textContent = `Ваша найбільша серія правильних відповідей: ${+localStorage.getItem('c-pl-ans-ser')}`;
-  whoTurn.textContent = '🔄 Хід: Гравець';
-  difficultyInfo.textContent = `🎮 Рівень: ${playDiff}`;
-  botScore.textContent = 'Ще немає відповідей';
-  playerScore.textContent = 'Ще немає відповідей';
   btnOkay.classList.remove('show');
   if(playDiff.toLowerCase().includes('hard')) btnOpenHelpWindow.classList.add('show');
   playerTurnMath = true;
@@ -895,7 +883,6 @@ mathGameContent.addEventListener('click', ({target: {classList}}) => {
   else if(classList.contains('okay')) {
     btnOkay.classList.remove('show')
     playerTurnMath = !playerTurnMath;
-    whoTurn.textContent = playerTurnMath ? '🔄 Хід: Гравець' : '🔄 Хід: Бот'
     inputAnswer.value = ''
     gameLoopMath()
   }
@@ -945,13 +932,12 @@ mathGameContent.addEventListener('click', ({target: {classList}}) => {
     }
     else { // Correct answer
       textContent.textContent = `Ви правильно вирішили приклад!\n\nВідповідь: ${corrAnswer}`;
-      playerScore.textContent = `👤 Гравець: ${++PS}`;
       contentBlock.classList.add('c-ans-anim');
 
       badPlayerAnsSer = 0;
 
       goodPlayerAnsSer++;
-      if(+localStorage.getItem('c-pl-ans-ser') < goodPlayerAnsSer) {localStorage.setItem('c-pl-ans-ser', goodPlayerAnsSer); localeCorrSer.textContent = `Ваша найбільша серія правильних відповідей: ${+localStorage.getItem('c-pl-ans-ser')}`}
+      if(+localStorage.getItem('c-pl-ans-ser') < goodPlayerAnsSer) {localStorage.setItem('c-pl-ans-ser', goodPlayerAnsSer);}
 
       setInitialRecord();
       ansNumber(true);

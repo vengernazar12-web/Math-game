@@ -563,40 +563,6 @@ button:disabled:hover { background: #444; color: black; box-shadow: none; }
   font-size: 1.5rem;
 }
 
-.playInfo {
-  display: grid;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-  'difficulty turn'
-  'PS BS'
-  'ScoreR ScoreR'
-  'corrSerries corrSerries';
-  min-width: 35vw;
-  min-height: 14vh;
-  backdrop-filter: blur(6px);
-  width: 25vw;
-  height: 125px;
-}
-.gameDifficulty {
-  grid-area: difficulty;
-  border-radius: 10px 0 0 0;
-}
-.turn {
-  grid-area: turn;
-  border-radius: 0 10px 0 0;
-}
-.botScore { grid-area: BS; }
-.playerScore { grid-area: PS; }
-.scoreRecord { grid-area: ScoreR; }
-.corrSerries {
-  grid-area: corrSerries;
-  border-radius: 0 0 10px 10px;
-}
-
 .helpContentBlock > div {
   margin: 20px;
   padding: 25px;
