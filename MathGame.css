@@ -495,7 +495,7 @@ button:disabled:hover { background: #444; color: black; box-shadow: none; }
   transition: transform .5s;
   text-align: center;
   overflow-y: scroll;
-}.stats-window.show { scale: 1 }
+}.stats-window.show { transform: scale(1); }
 
 .player-goals {
   transform: scale(0);
