@@ -931,7 +931,6 @@ mathGameContent.addEventListener('click', ({target: {classList}}) => {
       goodPlayerAnsSer++;
       if(+localStorage.getItem('c-pl-ans-ser') < goodPlayerAnsSer) {localStorage.setItem('c-pl-ans-ser', goodPlayerAnsSer);}
 
-      setInitialRecord();
       ansNumber(true);
 
       wallet()
