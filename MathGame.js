@@ -88,13 +88,6 @@ function ansNumber(OK) {
   else localStorage.setItem('bad-answer', +localStorage.getItem('bad-answer') + 1)
 }
 
-// Set initial record
-function setInitialRecord() {
-  const string = `${playDiff}-record`;
-  if(PS > +localStorage.getItem(string)) localStorage.setItem(string, PS);
-  scoreRecord.textContent = `⭐🏆🥇 Рекорд цього рівня: ${+localStorage.getItem(string)} 🥇🏆⭐`;
-}
-
 // Get random number function
 function randInt(min,max) {
   if(PS >= 25) { min *= 1.1; max *= 1.1; }
@@ -118,7 +111,6 @@ function botAnswerText(CORRECTANSWER, ...ARGS){
   if(CORRECT){
   textContent.textContent = `Боту попався ось такий приклад: ${ARGS.join(' ')}?
 Бот відповів: ${CORRECTANSWER}\nЦе правильна відповідь!`;
-  botScore.textContent = `🤖 Бот: ${++BS}`;
   }
   else textContent.textContent = `Боту попався ось такий приклад: ${ARGS.join(' ')}?
 Бот відповів: ${CORRECTANSWER + Math.floor(Math.random() * 15 + 1)}\nЦе НЕ правильна відповідь!`;
@@ -269,7 +261,6 @@ function MathGame(v) {
   plusCoinsForGame = playDiff === 'easy' ? 7 : playDiff === 'medium' ? 12 : playDiff === 'hard' ? 25 : 40
   if(localStorage.getItem('dblCoins') === 'buy') plusCoinsForGame *= 2;
   plusCoinsInfo.textContent = `За відповідь + ${plusCoinsForGame}`;
-  setInitialRecord();
   getPlayerAnswer();
 }
 
@@ -579,7 +570,6 @@ function setPlayerSkins() {
 }
 
 const allBlocksForUnlockHardcoreSkin = Array.from(document.querySelectorAll('.--for-unlock-hardcor-skin > div'))
-
 const cyberGoldSkinBlock = document.querySelector('.cyber-gold');
 const cyberGoldSkinBtn = cyberGoldSkinBlock.querySelector('button');
 const royalGoldSkinBlock = document.querySelector('.royal-gold');
@@ -939,7 +929,6 @@ mathGameContent.addEventListener('click', ({target: {classList}}) => {
       goodPlayerAnsSer++;
       if(+localStorage.getItem('c-pl-ans-ser') < goodPlayerAnsSer) {localStorage.setItem('c-pl-ans-ser', goodPlayerAnsSer);}
 
-      setInitialRecord();
       ansNumber(true);
 
       wallet()

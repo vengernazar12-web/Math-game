@@ -9,9 +9,9 @@
   .console-block { width: 50vw; }
 
   .content-block { height: 70vh; }
-  .textAnswer { width: 55%; height: 15%; }
-  .send-answer { width: 40%; height: 15%; }
-  .open-text-area { font-size: 1.2rem; height: 15%; }
+  .textAnswer { width: 55%; height: 12%; }
+  .send-answer { width: 40%; height: 12%; }
+  .open-text-area { font-size: 1.2rem; height: 12%; }
   .text-area { height: 30%; }
   .playInfo > p { border: none; }
 
@@ -123,7 +123,7 @@
   .skip-math-asc { bottom: 30vh; }
 
   .closeInitialGame { width: 40vw; left: 30vw; }
-  .okay { width: 40vw; left: 30vw; }
+  .okay { width: 40vw; left: 20vw; }
 
   .open-text-area { font-size: 0.5rem; }
 }
@@ -260,10 +260,20 @@
 
   .plus-coins-forDiff { font-size: 1rem; bottom: 10vh; }
 
-  .okay, .closeInitialGame { width: 30vw; height: 6vh; left: 35vw; }
+  .closeInitialGame {
+    width: 30vw;
+    height: 6vh;
+    left: 35vw;
+  }
 
-  .okay { top: 13vh; }
-
+  .okay {
+    top: 175px;
+    right: 5px;
+    left: unset;
+    width: 15%;
+    height: 35px;
+    border: 2px dashed red;
+  }
   .open-text-area { bottom: 23%; }
 
   .stats-window p { font-size: 1.25rem; }
