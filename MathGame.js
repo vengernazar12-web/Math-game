@@ -111,7 +111,6 @@ function botAnswerText(CORRECTANSWER, ...ARGS){
   if(CORRECT){
   textContent.textContent = `Боту попався ось такий приклад: ${ARGS.join(' ')}?
 Бот відповів: ${CORRECTANSWER}\nЦе правильна відповідь!`;
-  botScore.textContent = `🤖 Бот: ${++BS}`;
   }
   else textContent.textContent = `Боту попався ось такий приклад: ${ARGS.join(' ')}?
 Бот відповів: ${CORRECTANSWER + Math.floor(Math.random() * 15 + 1)}\nЦе НЕ правильна відповідь!`;
@@ -571,7 +570,6 @@ function setPlayerSkins() {
 }
 
 const allBlocksForUnlockHardcoreSkin = Array.from(document.querySelectorAll('.--for-unlock-hardcor-skin > div'))
-
 const cyberGoldSkinBlock = document.querySelector('.cyber-gold');
 const cyberGoldSkinBtn = cyberGoldSkinBlock.querySelector('button');
 const royalGoldSkinBlock = document.querySelector('.royal-gold');
