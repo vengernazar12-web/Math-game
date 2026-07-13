@@ -88,13 +88,6 @@ function ansNumber(OK) {
   else localStorage.setItem('bad-answer', +localStorage.getItem('bad-answer') + 1)
 }
 
-// Set initial record
-function setInitialRecord() {
-  const string = `${playDiff}-record`;
-  if(PS > +localStorage.getItem(string)) localStorage.setItem(string, PS);
-  scoreRecord.textContent = `⭐🏆🥇 Рекорд цього рівня: ${+localStorage.getItem(string)} 🥇🏆⭐`;
-}
-
 // Get random number function
 function randInt(min,max) {
   if(PS >= 25) { min *= 1.1; max *= 1.1; }
