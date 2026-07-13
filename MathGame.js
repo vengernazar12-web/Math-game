@@ -262,7 +262,6 @@ function MathGame(v) {
   plusCoinsForGame = playDiff === 'easy' ? 7 : playDiff === 'medium' ? 12 : playDiff === 'hard' ? 25 : 40
   if(localStorage.getItem('dblCoins') === 'buy') plusCoinsForGame *= 2;
   plusCoinsInfo.textContent = `За відповідь + ${plusCoinsForGame}`;
-  setInitialRecord();
   getPlayerAnswer();
 }
 
